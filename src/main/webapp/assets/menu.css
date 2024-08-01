@@ -1,0 +1,118 @@
+
+
+.head{
+    background-color: #152754;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+.head-menu{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    user-select: none;
+    font-size: 1.2em;
+    color: white;
+
+    > ul{
+        list-style: none;
+
+        :hover{
+            /*background: #1b3b77;*/
+
+            cursor: pointer;
+        }
+
+        > li{
+            transition: background 100ms;
+            display: inline;
+            padding: 10px;
+            a {
+                display: inline-block;
+                margin: -10px;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        > li:hover ul{
+            display: list-item;
+        }
+    }
+
+}
+.head-menu-selected{
+    background: #18356e;
+    color: white;
+}
+.head-box{
+    display: inline-block;
+    user-select: none;
+    align-content: center;
+    width: 600px;
+    height: 100px;
+    position: relative;
+
+    :hover{
+        cursor: pointer;
+    }
+}
+.head-title{
+    font-size: 2.5em;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 10px;
+    color: white;
+}
+
+.head-menu-login{
+    right: 20px;
+}
+
+
+#side-bar-title{
+    padding: 15px;
+    background: #222f4f;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+
+}
+.side-bar-container{
+    width: 300px;
+    border: solid 1px lightgray;
+    user-select: none;
+    display: inline-block;
+    position: fixed;
+    #side-bar-menu {
+        list-style: none;
+        display: inline;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        li:hover{
+            background: #3d6b9b;
+            cursor: pointer;
+            color: #e9811c;
+        }
+
+        li{
+            position: relative;
+            margin: 0 0;
+            padding: 20px;
+            width: auto;
+            display: block;
+            font-size: 1.1em;
+            transition: background 100ms;
+        }
+    }
+}
+
+.side-bar-menu-selected{
+    background: #3f637b;
+    color: white;
+}

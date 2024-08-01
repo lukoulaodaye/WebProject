@@ -1,0 +1,336 @@
+/* 重置样式 reset style  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* 公共样式  common style */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 水平居中 */
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+/* 清除浮动 */
+.clear{
+    clear: both;
+}
+
+/* 高度塌陷 */
+.clearboth::after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* 弹性布局 */
+.flexbox {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* 标题文本 */
+.column-title{
+    margin: 40px 0;
+}
+
+/* 主标题 */
+.column-title h2{
+    text-align: center;
+}
+.column-one-text {
+    color: green;
+}
+
+/* 副标题  */
+.column-title h3{
+    padding-left: 10px;
+    border-left: 8px solid #0281E8;
+    text-align: left;
+}
+
+/* 区域文本默认设置 */
+.column-text p{
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+/* 区域图片默认修改  */
+.column-img{
+    overflow: hidden;
+}
+
+.column-img img{
+    vertical-align: top;
+}
+
+/* 当前导航 */
+.current-nav{
+    color: #fff !important;
+    font-size: 20px !important;
+    background-color: #09d2fe !important;
+    border-bottom: 2px solid #ffee34 !important;
+}
+
+/* header  */
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.087);
+}
+
+/* 顶部 */
+.top{
+    background-color: #152754;
+}
+
+
+.loginbar li{
+    float: right;
+    height: 100px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 80px;
+}
+
+.loginbar li:first-child{
+    float: left;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.loginbar li a:hover{
+    color: #fff;
+
+}
+
+.loginbar li:first-child a:hover{
+    text-decoration: none;
+}
+
+/* banner start */
+.banner-wrapper {
+    height: 520px;
+    color: #fff;
+    background: url(../images/banner1.jpg) no-repeat center/cover;
+}
+
+.child-banner{
+    height: 420px;
+    background: url(../images/banner1.jpg) no-repeat center/cover;
+}
+/* 导航区 */
+.nav {
+    background-color: #fff;
+}
+
+.nav li{
+    width: 14.2%;
+    height: 50px;
+    float: left;
+    text-align: center;
+}
+
+.nav li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.nav li a:hover {
+    color: #fff;
+    background-color: #1b3b77;
+}
+.lianjie {
+    background-color: #2351a1; /* 导航栏背景色 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    list-style: none; /* 移除列表样式 */
+    padding: 0;
+    margin: 0;
+    box-shadow: 8px 4px 8px rgb(0, 0, 0); /* 添加背景阴影 */
+    border-radius: 8px; /* 可选：添加圆角边框 */
+}
+
+.lianjie ul {
+    display: flex; /* 使列表项水平排列 */
+    list-style-type: none; /* 移除列表项的默认样式 */
+    margin: 0;
+    padding: 0;
+}
+
+.lianjie li {
+    margin: 0 10px; /* 导航项之间的间距 */
+}
+
+.lianjie a {
+    color: #ffffff; /* 文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    padding: 10px 15px; /* 内边距 */
+    display: block; /* 使链接占据整个列表项 */
+    transition: background-color 0.3s; /* 背景色变化的过渡效果 */
+}
+
+.lianjie a:hover {
+    background-color: #152754; /* 鼠标悬停时的背景色 */
+}
+
+/* 底部版权声明 */
+.copyright {
+    height: 60px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #18356e;
+    color: #fff;
+}
+
+/* 首页 */
+.column-one-content{
+    color: #fff;
+    background-color: #57E0FF;
+    background: url(../images/bg.png) no-repeat center bottom/cover;
+    background-attachment: fixed;
+}
+
+.cilumn-one-img img{
+    width: 100%;
+}
+
+.column-one-text{
+    padding: 20px 40px;
+}
+
+.column-two{
+    height: 250px;
+}
+
+.column-two-card{
+    width: 15%;
+    height: 180px;
+    margin-right: 24px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.153);
+    transition: all .3s linear;
+}
+
+.column-two-card:last-child{
+    margin: 0;
+}
+
+.column-two-card h2{
+    padding-top: 50px;
+    font-size: 42px;
+    color: #09d2fe;
+    transition: all .3s linear;
+}
+
+.column-two-card h3{
+    color: #006176;
+    margin-bottom: 5px;
+}
+
+.column-two-card p{
+    display: none;
+    padding: 5px;
+    color: #fff;
+}
+
+/* 卡片鼠标滑动效果 */
+.column-two-card:hover{
+    height: 200px;
+    background-color:#09d2fe;
+}
+
+.column-two-card:hover h2{
+    padding-top: 5px;
+    color: #fff;
+}
+
+.column-two-card:hover p{
+    display: block;
+}
+
+.index-video{
+    width: 80%;
+    margin-left: 120px;
+}
+
+.index-video video{
+    vertical-align: top;
+}
+
+.column-four-img{
+    float: left;
+    width: 33%;
+    height: 222px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.column-four-img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    transition: transform .2s linear;
+}
+
+.column-four-img img:hover{
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.column-four{
+    margin-bottom: 40px;
+}
+.in_link {
+    width: 1198px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    min-height: 100px;
+    border: 1px solid #d4d4d4;
+    border-top: 7px solid #d4d4d4;
+}
